@@ -1,0 +1,2 @@
+C:\Users\USER\Documents\custom_pipe\obj\Debug\custom_pipe.esproj.SuggestedBindingRedirects.cache
+C:\Users\USER\Documents\custom_pipe\obj\Debug\custom_pipe.esproj.CoreCompileInputs.cache
