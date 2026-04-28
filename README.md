@@ -1,27 +1,49 @@
-# CustomPipe
+# Angular Custom Pipe Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+A simple Angular 20.2.0 application demonstrating a custom number-to-words pipe.
 
-## Development server
+## Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This project shows how to create and use custom Angular pipes. The main feature is a `NumberToWordsPipe` that converts numeric values to their English word representation.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Custom Pipe**: Converts numbers to English words (e.g., 1003 → "One Thousand and Three")
+- **Number Support**: Handles numbers from zero to nonillion
+- **Formatted Output**: Includes proper comma formatting and British English style
+- **Modern Angular**: Built with Angular 20.2.0 and TypeScript 5.8.0
+- **Single Component**: Consolidated component structure for demo simplicity
 
-## Build
+## Project Structure
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+src/
+├── app/
+│   ├── app.component.ts      # Main component with template and styles
+│   ├── app.module.ts        # Angular module configuration
+│   └── num-to-words.pipe.ts # Custom pipe implementation
+├── main.ts                # Application bootstrap
+└── styles.css             # Global styles (minimal)
+```
 
-## Running unit tests
+## Usage
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Development Server**: Run `ng serve` to start at `http://localhost:4200/`
+2. **Build**: Run `ng build` to create production build in `dist/`
+3. **Test**: Run `ng test` to execute unit tests
 
-## Running end-to-end tests
+## Technologies
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Angular 20.2.0
+- TypeScript 5.8.0
+- RxJS 7.8.0
+- Zone.js 0.14.0
 
-## Further help
+## Getting Started
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+npm install
+ng serve
+```
+
+Navigate to `http://localhost:4200/` and try entering different numbers to see them converted to words.
